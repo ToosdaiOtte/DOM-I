@@ -58,6 +58,11 @@ navItems[3].innerHTML = "Features";
 navItems[4].innerHTML = "About";
 navItems[5].innerHTML = "Contact";
 
+//Button Text
+const bttnText = document.querySelector('.cta-text button');
+bttnText.textContent = 'Get Started';
 
-
+//H1
+const header = document.querySelector('.cta-text h1');
+header.textContent = 'Dom is awesome';
 
