@@ -50,19 +50,19 @@ let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 //Nav Links
-let navItems = document.querySelectorAll('nav a');
-navItems[0].innerHTML = "Services";
-navItems[1].innerHTML = "Product";
-navItems[2].innerHTML = "Vision";
-navItems[3].innerHTML = "Features";
-navItems[4].innerHTML = "About";
-navItems[5].innerHTML = "Contact";
+const navLinks = document.querySelectorAll('a');
+let counter = 1;
+navLinks.forEach((element) => {
+  element.textContent = siteContent['nav'][`nav-item-${counter}`]
+  counter++;
+});
+
 
 //Button Text
-const bttnText = document.querySelector('.cta-text button');
-bttnText.textContent = 'Get Started';
+const bttnText = document.querySelector(".cta-text button");
+bttnText.textContent = "Get Started";
 
 //H1
 const header = document.querySelector('.cta-text h1');
-header.textContent = 'Dom is awesome';
+header.textContent = "DOM\n is\n awesome";
 
