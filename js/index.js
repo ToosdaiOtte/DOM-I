@@ -66,3 +66,10 @@ bttnText.textContent = "Get Started";
 const header = document.querySelector('.cta-text h1');
 header.textContent = "DOM\n is\n awesome";
 
+//Paragraphs
+const paragraphs = document.querySelectorAll("p");
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
