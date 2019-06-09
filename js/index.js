@@ -58,8 +58,18 @@ navLinks.forEach((element) => {
   element.style.color = 'green';
 });
 
+//Append Nav Element
+const navBar = document.querySelector('nav');
+const more = document.createElement('a');
+more.href ='#';
+more.textContent = 'More';
+navBar.appendChild(more);
 
-
+//Prepend Nav Element
+const home = document.createElement('a');
+home.href = '#';
+home.textContent = 'Home';
+navBar.prepend(home);
 
 //Button Text
 const bttnText = document.querySelector(".cta-text button");
