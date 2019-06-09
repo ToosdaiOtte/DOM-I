@@ -55,16 +55,27 @@ let counter = 1;
 navLinks.forEach((element) => {
   element.textContent = siteContent['nav'][`nav-item-${counter}`]
   counter++;
+  element.style.color = 'green';
 });
+
+
 
 
 //Button Text
 const bttnText = document.querySelector(".cta-text button");
-bttnText.textContent = "Get Started";
+bttnText.textContent = siteContent['cta']['button'];
 
 //H1
 const header = document.querySelector('.cta-text h1');
-header.textContent = "DOM\n is\n awesome";
+header.textContent = siteContent["cta"]["h1"];
+
+//Paragraph Headers
+const pgHeaders = document.querySelectorAll("h4");
+pgHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+pgHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+pgHeaders[2].textContent = siteContent["main-content"]["services-h4"];
+pgHeaders[3].textContent = siteContent["main-content"]["product-h4"];
+pgHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
 
 //Paragraphs
 const paragraphs = document.querySelectorAll("p");
@@ -73,3 +84,18 @@ paragraphs[1].textContent = siteContent["main-content"]["about-content"];
 paragraphs[2].textContent = siteContent["main-content"]["services-content"];
 paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+//Contact Header
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+//Contact Paragraphs
+const contactPg = document.querySelectorAll(".contact p");
+contactPg[0].textContent = siteContent["contact"]["address"];
+contactPg[1].textContent = siteContent["contact"]["phone"];
+contactPg[2].textContent = siteContent["contact"]["email"];
+
+//Copyright
+const copyright = document.querySelector('footer p');
+copyright.textContent = siteContent["footer"]["copyright"];
+
